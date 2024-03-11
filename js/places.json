@@ -1,0 +1,32 @@
+[{
+    "id":22,
+    "slug":"ciudad-de-mexico",
+    "city_slug":"ciudad-de-mexico",
+    "display":"Ciudad de México",
+    "ascii_display":"ciudad de mexico",
+    "city_name":"Ciudad de México",
+    "city_ascii_name":"ciudad de mexico",
+    "state":"Distrito Federal",
+    "country":"México",
+    "lat":"19.4326077",
+    "long":"-99.133208",
+    "result_type":"city",
+    "popularity":"1.0"
+},
+{
+    "id":15,
+    "slug":"guadalajara",
+    "city_slug":"guadalajara",
+    "display":"Guadalajara",
+    "ascii_display":"guadalajara",
+    "city_name":"Guadalajara",
+    "city_ascii_name":"guadalajara",
+    "state":"Jalisco",
+    "country":"México",
+    "lat":"20.6596988",
+    "long":"-103.3496092",
+    "result_type":"city",
+    "popularity":"0.655596944251531"
+},
+{
+    "id":19,"slug":"monterrey","city_slug":"monterrey","display":"Monterrey","ascii_display":"monterrey","city_name":"Monterrey","city_ascii_name":"monterrey","state":"Nuevo León","country":"México","lat":"25.6866142","long":"-100.3161126","result_type":"city","popularity":"0.365111433802639"},{"id":137,"slug":"morelia","city_slug":"morelia","display":"Morelia","ascii_display":"morelia","city_name":"Morelia","city_ascii_name":"morelia","state":"Michoacán","country":"México","lat":"19.7059504","long":"-101.1949825","result_type":"city","popularity":"0.231327735336827"},{"id":110,"slug":"puerto-vallarta","city_slug":"puerto-vallarta","display":"Puerto Vallarta","ascii_display":"puerto vallarta","city_name":"Puerto Vallarta","city_ascii_name":"puerto vallarta","state":"Jalisco","country":"México","lat":"20.653407","long":"-105.2253316","result_type":"city","popularity":"0.227476482101143"},{"id":7,"slug":"acapulco","city_slug":"acapulco","display":"Acapulco","ascii_display":"acapulco","city_name":"Acapulco","city_ascii_name":"acapulco","state":"Guerrero","country":"México","lat":"16.8531086","long":"-99.8236533","result_type":"city","popularity":"0.225014205442263"},{"id":112,"slug":"leon","city_slug":"leon","display":"León","ascii_display":"leon","city_name":"León","city_ascii_name":"leon","state":"Guanajuato","country":"México","lat":"21.1250077","long":"-101.6859605","result_type":"city","popularity":"0.219710840330829"},{"id":118,"slug":"tijuana","city_slug":"tijuana","display":"Tijuana","ascii_display":"tijuana","city_name":"Tijuana","city_ascii_name":"tijuana","state":"Baja California","country":"México","lat":"32.5149469","long":"-117.0382471","result_type":"city","popularity":"0.207462592335375"},{"id":105,"slug":"santiago-de-queretaro","city_slug":"santiago-de-queretaro","display":"Santiago de Querétaro","ascii_display":"santiago de queretaro","city_name":"Santiago de Querétaro","city_ascii_name":"santiago de queretaro","state":"Querétaro","country":"México","lat":"20.5887932","long":"-100.3898881","result_type":"city","popularity":"0.207273186438538"},{"id":95,"slug":"san-luis-potosi","city_slug":"san-luis-potosi","display":"San Luis Potosí","ascii_display":"san luis potosi","city_name":"San Luis Potosí","city_ascii_name":"san luis potosi","state":"San Luis Potosí","country":"México","lat":"22.1564699","long":"-100.9855409","result_type":"city","popularity":"0.199381274070333"},{"id":388,"slug":"mazatlan","city_slug":"mazatlan","display":"Mazatlán","ascii_display":"mazatlan","city_name":"Mazatlán","city_ascii_name":"mazatlan","state":"Sinaloa","country":"México","lat":"23.2494148","long":"-106.4111425","result_type":"city","popularity":"0.166424648020708"},{"id":17,"slug":"guanajuato","city_slug":"guanajuato","display":"Guanajuato","ascii_display":"guanajuato","city_name":"Guanajuato","city_ascii_name":"guanajuato","state":"Guanajuato","country":"México","lat":"21.0190145","long":"-101.2573586","result_type":"city","popularity":"0.160553065218764"},{"id":86,"slug":"puebla","city_slug":"puebla","display":"Puebla","ascii_display":"puebla","city_name":"Puebla","city_ascii_name":"puebla","state":"Puebla","country":"México","lat":"19.0412967","long":"-98.2061996","result_type":"city","popularity":"0.153355641138961"},{"id":114,"slug":"aguascalientes","city_slug":"aguascalientes","display":"Aguascalientes","ascii_display":"aguascalientes","city_name":"Aguascalientes","city_ascii_name":"aguascalientes","state":"Aguascalientes","country":"México","lat":"21.8852562","long":"-102.2915677","result_type":"city","popularity":"0.147357787739125"},{"id":134,"slug":"toluca","city_slug":"toluca","display":"Toluca","ascii_display":"toluca","city_name":"Toluca","city_ascii_name":"toluca","state":"México","country":"México","lat":"19.2826098","long":"-99.6556653","result_type":"city","popularity":"0.139276469474083"},{"id":97,"slug":"san-miguel-de-allende","city_slug":"san-miguel-de-allende","display":"San Miguel de Allende","ascii_display":"san miguel de allende","city_name":"San Miguel de Allende","city_ascii_name":"san miguel de allende","state":"Guanajuato","country":"México","lat":"20.9144491","long":"-100.745235","result_type":"city","popularity":"0.111496937938001"}]

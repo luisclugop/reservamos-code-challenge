@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- SEO -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Code Challenge - Reservamos"/>
+<meta name="author" content="Luis Carlos Lugo" />
+<meta name="copyright" content="Copyright owner Luis Carlos Lugo" />
+
+<!-- Title -->
+<title>Code Challenge - Reservamos</title>
+
+<!-- Css -->
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+	<!-- Weather Section -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-3 actualWeather" id="actualWeather">
+				<div class="container buttonSearch">
+					<form>
+						<select id="filtroSelect" class="button2">
+							<option selected="selected" disabled>Escoge un Lugar: </option>
+						</select>
+						<!-- <button class="btn button2" id="mostrarClima">Mostrar</button> -->
+					</form>
+				</div>
+				<div class="container-fluid ClimaActual text-center">
+					<div class="cloud">
+						<svg viewBox='0 0 105 105'>
+							<path d='M 25,60 
+									 a 20,20 1 0,0 0,40 
+									 h 50 
+									 a 20,20 1 0,0 0,-40 
+									 a 10,10 1 0,0 -15,-10 
+									 a 15,15 1 0,0 -35,10  
+									 z' />
+						  </svg>
+					</div>
+					<div class="cloud2">
+						<svg viewBox='0 0 105 105'>
+							<path d='M 25,60 
+									 a 20,20 1 0,0 0,40 
+									 h 50 
+									 a 20,20 1 0,0 0,-40 
+									 a 10,10 1 0,0 -15,-10 
+									 a 15,15 1 0,0 -35,10  
+									 z' />
+						  </svg>
+					</div>
+					<div class="cloud3">
+						<svg viewBox='0 0 105 105'>
+							<path d='M 25,60 
+									 a 20,20 1 0,0 0,40 
+									 h 50 
+									 a 20,20 1 0,0 0,-40 
+									 a 10,10 1 0,0 -15,-10 
+									 a 15,15 1 0,0 -35,10  
+									 z' />
+						  </svg>
+					</div>
+					<div class="icon">
+						<!-- <i class="fas fa-cloud-sun"></i> -->
+						<img src="/img/01d@2x.png" class="imgWeather" id="imagenClima" alt="Imagen del Clima">
+					</div>
+					<div class="grade">
+						<p id="grados" class="grados">21</p>
+						<p class="unidad">°C</p>
+					</div>
+					<div class="factores">
+						<p id="factor" class="factor">Parcialmente Nublado</p>
+					</div>
+					<div class="ubicacion">
+						<div class="fecha">
+							<p class="dia" id="fechaActual"></p>
+						</div>
+						<div class="ubicacionLugar">
+							<p id="ciudad">Pachuca</p>
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-xs-12 col-sm-12 col-md-8 col-lg-9 detailsWeather" id="detailsWeather">
+				<div class="container-fluid pronosticosClima">
+					<div class="row">
+						<div class="col-6">
+							<h3 class="tituloPagina">Pronóstico Siguientes días</h3>
+						</div>
+						<div class="col-6">
+							<button class="button2 float-right" id="btnLight">Light Mood</button>
+							<button class="button2 float-right" id="btnDark">Dark Mood</button>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-6">
+							<div class="card text-center">
+								<div class="card-body">
+									<p class="tituloPronosticos" id="fechaMañana"></p>
+									<div class="temperaturas">
+										<p class="tituloPronosticos">Máx. /</p>
+										<p class="tituloPronosticos">Min.</p>
+									</div>
+									<div class="temperaturas">
+										<h3 class="statusPronosticos" id="tempMaxMañana">22° C /</h3>
+										<h3 class="statusPronosticos" id="tempMinMañana">11° C</h3>
+									</div>
+									<img src="/img/01d@2x.png" class="imgWeather" id="imagenClimaMañana" alt="Imagen del Clima">
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card text-center">
+								<div class="card-body">
+									<p class="tituloPronosticos" id="fechaPasadoMañana"></p>
+									<div class="temperaturas">
+										<p class="tituloPronosticos">Máx. /</p>
+										<p class="tituloPronosticos">Min.</p>
+									</div>
+									<div class="temperaturas">
+										<h3 class="statusPronosticos" id="tempMaxPostMañana">22° C /</h3>
+										<h3 class="statusPronosticos" id="tempMinPostMañana">11° C</h3>
+									</div>
+									<img src="/img/01d@2x.png" class="imgWeather" id="imagenClimaPostMañana" alt="Imagen del Clima">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="tituloPagina">Pronóstico hoy</h3>
+					<div class="row">
+						<div class="col-6">
+							<div class="card text-center">
+								<div class="card-body">
+									<div class="temperaturas">
+										<h5 class="tituloPronosticos">Máx. /</h5>
+										<h5 class="tituloPronosticos">Min.</h5>
+									</div>
+									<div class="temperaturas">
+										<h3 class="statusPronosticos" id="climaMax">22° C /</h3>
+										<h3 class="statusPronosticos" id="climaMin">11° C</h3>
+									</div>
+									
+									<i class="fas fa-temperature-low"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card text-center">
+								<div class="card-body">
+									<h5 class="tituloPronosticos">Viento</h5>
+									<h3 class="statusPronosticos" id="viento">8 km/h</h3>
+									<i class="fas fa-wind"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card text-center">
+								<div class="card-body">
+									<h5 class="tituloPronosticos">Sensación Térmica</h5>
+									<h3 class="statusPronosticos" id="sensacionTermica">21° C</h3>
+									<i class="fas fa-temperature-low"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 pb-5">
+							<div class="card text-center">
+								<div class="card-body">
+									<h5 class="tituloPronosticos">Humedad</h5>
+									<h3 class="statusPronosticos" id="humedad">43 %</h3>
+									<i class="fas fa-tint"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

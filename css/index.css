@@ -1,0 +1,396 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button.button2{
+	padding:8px 30px;
+	border:2px solid #FFFFFF;
+	background-color: transparent;
+	/* margin:arriba derecha abajo izquierda; */
+	margin: 20px 5px 20px 5px;
+	box-sizing: border-box;
+	text-decoration:none;
+	text-transform:uppercase;	
+	font-weight:400;
+	color:#FFFFFF;
+	text-align:center;
+	transition: ease .8s;
+	cursor: pointer;
+}
+
+button.button2:hover{
+	border-color:#DDDDDD;
+}
+
+button.button2:disabled{
+	border-color:#BBBBBB;
+	opacity: .6;
+}
+
+@media only screen and (max-width: 600px) {
+	button.button2{
+		padding:8px 15px;
+		/* margin:arriba derecha abajo izquierda; */
+		margin: 5px 5px 5px 0;
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	button.button2{
+		padding:8px 15px;
+		/* margin:arriba derecha abajo izquierda; */
+		margin: 15px 5px 20px 0;
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	button.button2{
+		padding:8px 30px;
+		/* margin:arriba derecha abajo izquierda; */
+		margin: 5px 5px 5px 5px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	button.button2{
+		padding:8px 30px;
+		/* margin:arriba derecha abajo izquierda; */
+		margin: 20px 5px 20px 5px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	button.button2{
+		padding:8px 30px;
+		/* margin:arriba derecha abajo izquierda; */
+		margin: 20px 5px 20px 5px;
+	}
+}
+
+/* Section Izquierda */
+
+.actualWeather{
+	height:auto;
+	background-color: #6f6d9b;
+	color: #ffffff;
+}
+
+.actualWeather .buttonSearch form{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+.actualWeather select.button2{
+	padding:8px 10px;
+	border:2px solid #FFFFFF;
+	background-color: transparent;
+	/* margin:arriba derecha abajo izquierda; */
+	margin: 20px 5px 20px 5px;
+	box-sizing: border-box;
+	text-decoration:none;
+	text-transform:uppercase;	
+	font-weight:400;
+	color:#DDDDDD;
+	text-align:center;
+	transition: ease .8s;
+}
+
+.actualWeather select option{
+	color: #000000;
+}
+
+.actualWeather .climaActual{
+	display: block;
+}
+
+.actualWeather .icon img{
+	height: 150px !important;
+	image-rendering: auto !important;
+	filter: drop-shadow(0 0 1px white);
+}
+
+.actualWeather .icon{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.actualWeather .grade{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+.actualWeather .grade .grados{
+	font-size: 150px;
+	transition: ease .8s;
+	/* text-shadow: 1px 0px 10px #515151; */
+}
+
+.actualWeather .grade .unidad{
+	font-size: 80px;
+	color: #DDDDDD;
+	transition: ease .8s;
+}
+
+.actualWeather .factores .factor{
+	font-size: 30px;
+	color: #DDDDDD;
+	text-transform: capitalize;
+	transition: ease .8s;
+}
+
+.actualWeather .ubicacion .fecha{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+.actualWeather .ubicacion .fecha .dia{
+	font-size: 20px;
+	color: #DDDDDD;
+	padding-right: 10px;
+	transition: ease .8s;
+}
+
+.actualWeather .ubicacion .ubicacionLugar{
+	font-size: 20px;
+	color: #DDDDDD;	
+	font-weight:400;
+	padding-bottom: 20px;
+	transition: ease .8s;
+}
+
+/* Light Mode */
+
+.actualWeatherLight{
+	height:auto;
+	background-color: #ade8f4;
+	color: #000000;
+}
+.actualWeatherLight select.button2{
+	color: #000000;
+}
+.actualWeatherLight .grade .unidad{
+	color: #343a40;
+}
+.actualWeatherLight .factores .factor{
+	color: #343a40;
+}
+.actualWeatherLight .ubicacion .fecha .dia{
+	color: #343a40;
+}
+.actualWeatherLight .ubicacion .ubicacionLugar{
+	color: #343a40;
+}
+
+/* Light Mode */
+
+/* Section Derecha */
+
+.detailsWeather{
+	height: auto;
+	background-color: #181723;
+}
+
+.detailsWeather .pronosticosClima{
+	padding-top: 20px;
+}
+
+.detailsWeather .pronosticosClima img{
+	height: 75px !important;
+	image-rendering: auto !important;
+	filter: drop-shadow(0 0 1px white);
+	margin-bottom: -10px;
+}
+
+.detailsWeather .pronosticoSemanal{
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+.detailsWeather .pronosticosClima .tituloPagina{
+	padding-top: 20px;
+	color: #DDDDDD;
+	font-weight:500;
+}
+
+@media only screen and (max-width: 600px) {
+	.detailsWeather .pronosticosClima .tituloPagina{
+		padding-top: 20px;
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.detailsWeather .pronosticosClima .tituloPagina{
+		padding-top: 20px;
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.detailsWeather .pronosticosClima .tituloPagina{
+		padding-top: 20px;
+		font-size: 25px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.detailsWeather .pronosticosClima .tituloPagina{
+		padding-top: 20px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.detailsWeather .pronosticosClima .tituloPagina{
+		padding-top: 20px;
+	}
+}
+
+.detailsWeather .pronosticosClima .card{
+	width: 100%;
+	height: auto;
+	background-color: rgba(150, 150, 150, 0.2);
+	border:1px solid #FFFFFF;
+	margin-top: 30px !important;
+}
+
+.detailsWeather .pronosticosClima .card .temperaturas{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+.detailsWeather .pronosticosClima .card .tituloPronosticos{
+	color: #DDDDDD;
+	font-weight:500;
+}
+
+@media only screen and (max-width: 600px) {
+	.detailsWeather .pronosticosClima .card .tituloPronosticos{
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.detailsWeather .pronosticosClima .card .tituloPronosticos{
+		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.detailsWeather .pronosticosClima .card .tituloPronosticos{
+		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.detailsWeather .pronosticosClima .card .tituloPronosticos{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.detailsWeather .pronosticosClima .card .tituloPronosticos{
+		font-size: 20px;
+	}
+}
+
+.detailsWeather .pronosticosClima .card .statusPronosticos{
+	color: #DDDDDD;
+}
+
+@media only screen and (max-width: 600px) {
+	.detailsWeather .pronosticosClima .card .statusPronosticos{
+		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.detailsWeather .pronosticosClima .card .statusPronosticos{
+		font-size: 25px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.detailsWeather .pronosticosClima .card .statusPronosticos{
+		font-size: 25px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.detailsWeather .pronosticosClima .card .statusPronosticos{
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.detailsWeather .pronosticosClima .card .statusPronosticos{
+		font-size: 35px;
+	}
+}
+
+.detailsWeather .pronosticosClima .card i{
+	padding-top: 10px;
+	color: #DDDDDD;
+	font-size: 30px;
+}
+
+/* Light Mode */
+
+.detailsWeatherLight{
+	background-color: #012a4a;
+}
+
+/* Light Mode */
+
+
+/* Clouds */
+
+svg {
+	height: 100px;
+	width: 50%;
+	opacity: .09;
+	z-index: -1 !important;
+}
+
+path {
+	fill: #191c1f;
+	transition: ease .3s;
+}
+
+path:hover {
+	fill: #494949;
+}
+
+.cloud{
+	position: absolute;
+	top: 5%;
+	left: -120px;
+}
+.cloud2{
+	position: absolute;
+	top: 15%;
+	right: -130px;
+}
+.cloud3{
+	position: absolute;
+	top: 22%;
+	left: -120px;
+}
+
+/* Clouds */
